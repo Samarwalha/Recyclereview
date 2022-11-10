@@ -19,17 +19,14 @@ import android.view.MenuItem;
 import java.util.LinkedList;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView mRecyclerView;
 
-    private WordListAdapter mAdapter;
+
+
     private final LinkedList<String> mWordList = new LinkedList<>();
-   
-   
-
-
     private ActivityMainBinding binding;
-
-    @Override
+       private RecyclerView mRecyclerView;
+       private WordListAdapter mAdapter;
+       @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         for (int i = 0; i < 20; i++) {
